@@ -10,11 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@200;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
 
   <script src="https://kit.fontawesome.com/446937da19.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
+    <a id="home"></a>
     <navbar>
       <ul class="nav-list">
         <li class="nav-item">
@@ -22,7 +24,11 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-item-link" href="#skills" target="_self">Skills</a>
+          <a class="nav-item-link" href="#home" target="_self">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-item-link" href="#about" target="_self">About</a>
         </li>
 
         <li class="nav-item">
@@ -36,38 +42,106 @@
     </navbar>
   </header>
 
+  <!-- CHAT BUTTON -->
+  <button class="open-btn" type="button" onclick="openChatWindow()"><i class="fa fa-comment"></i>Chat</button>
+
+  <div class="chat-popup" id="chat-form-container">
+    <form action="#" class="form-container">
+      <div class="chat-window-head">
+        <h4><i class="fa fa-comment"></i> Chat Window</h4>
+        <span class="close-btn" onclick="closeChatWindow()">
+          <i class="fa fa-times"></i>
+        </span>
+      </div>
+
+      <div class="msg-container">
+        <div class="msg">
+          <p>Hey, how may I help you?</p>
+          <span>09:34pm</span>
+        </div>
+      </div>
+
+      <div class="chat-box-container">
+        <div class="chat-box">
+          <input type="text" placeholder="Type your message.." name="msg" required>
+          <button title="button" type="submit" class="btn"><i class="fa fa-chevron-circle-right send-btn"></i></button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--  -->
+
+
   <!-- HOME PAGE SECTION-->
-  <a id="home"></a>
+  
   <main class="main-container">
     <div class="main-container">
       <img src="yellow-blobs4.png" class="img-4" alt="Yellow blob">
       <p class="top-left">Frontend Web Developer</p>
       <h2 class="intro">Nice to meet you&#128075 I'm <span>Lindsay.</span></h2>
-      <p class="intro-p">I'm a Frontend Web Developer, based out of Utah. I build websites and applications that create an overall pleasant user experience, check out my some of my work in the projects section! I'm open to job opportunities where I can contribute, learn, and grow my skill set as a developer. If you have a good opportunity that matches my skill level and experience then don't hesitate to reach out to me.</p>
-      <div class="button-container"><a class="intro-p button" href="#skills">Next Section</a></div>
+      <p class="intro-p">I'm a Frontend Web Developer, based out of Utah. I build websites and applications that create an overall pleasant user experience, check out some of my work in the projects section! I'm open to job opportunities where I can contribute, learn, and grow my skill set as a developer. If you have a good opportunity that matches my skill level and experience then don't hesitate to reach out to me.</p>
+      <div class="button-container"><a class="intro-p button" href="#about">Next Section</a></div>
     </div>
   </main>
 
+  <div>
+    <!-- <img src="./1b.png" alt="Background Blob"> -->
+  </div>
+
+  <!-- ABOUT ME SECTION? -->
+  <a id="about"></a>
+  <div class="about-container">
+    <h2 class="about-h2">About Me</h2>
+
+    <div class="parent-container">
+      <div class="container1">
+        <h3 class="about-h3">Get to know me!</h3>
+        <p class="about-p">I'm a Frontend focused web developer, raised in southern Utah. I'm passionate about creating enjoyable and websites and applications that users everywhere can enjoy.</p>
+        <p class="about-p">My coding journey began on Codecademy. I've always been interested in technology, that it was only a matter of time until I found myself coding! When in school, I took all the coding classes and graphic design classes I had avaliable to me.</p>
+        <p class="about-p">Currently, I am open to job opportunities where I can not only contribute, but learn and grow my skillset as a developer. If you're interested in my work, don't hesitate to reach out to me!</p>
+
+        <div class="skill-btn-container"><a class="skill-btn button aboutbtn" href="#contact">Contact me</a></div>
+      </div>
+
+      <div class="container2">
+        <h3 class="about-h3">My Skills</h3>
+        <div id="skill_container">
+          <i class="skill fa-brands fa-html5 fa-7x"></i>
+          <i class="skill fa-brands fa-css3-alt fa-7x"></i>
+          <i class="skill fa-brands fa-square-js fa-7x"></i>
+          <i class="skill fa-brands fa-react fa-7x"></i>
+          <i class="skill fa-brands fa-github fa-7x"></i>
+          <i class="skill fa-brands fa-chrome fa-7x"></i>
+          <i class="skill fa-solid fa-terminal fa-7x"></i>
+          <i class="skill fa-brands fa-npm fa-7x"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-btn-container"><a class="skill-btn button" href="#projects">Next Section</a></div>
+  </div>
+  <!-- ----------------  -->
+
+
   <!-- SKILL PAGE SECTION -->
-  <a id="skills"></a>
+  <!-- <a id="skills"></a> 
   <div class="skills-main-container">
-  
   <h2 class="skills">Skills</h2>
 
   <div id="skill_container">
-    <i class="skill fa-brands fa-html5 fa-10x"></i>
-    <i class="skill fa-brands fa-css3-alt fa-10x"></i>
-    <i class="skill fa-brands fa-square-js fa-10x"></i>
-    <i class="skill fa-brands fa-react fa-10x"></i>
-    <i class="skill fa-brands fa-github fa-10x"></i>
-    <i class="skill fa-brands fa-chrome fa-10x"></i>
-    <i class="skill fa-solid fa-terminal fa-10x"></i>
-    <i class="skill fa-brands fa-npm fa-10x"></i>
+    <i class="skill fa-brands fa-html5 fa-7x"></i>
+    <i class="skill fa-brands fa-css3-alt fa-7x"></i>
+    <i class="skill fa-brands fa-square-js fa-7x"></i>
+    <i class="skill fa-brands fa-react fa-7x"></i>
+    <i class="skill fa-brands fa-github fa-7x"></i>
+    <i class="skill fa-brands fa-chrome fa-7x"></i>
+    <i class="skill fa-solid fa-terminal fa-7x"></i>
+    <i class="skill fa-brands fa-npm fa-7x"></i>
   </div>
 
   <div class="skill-btn-container"><a class="skill-btn button" href="#projects">Next Section</a></div>
   </a>
-</div>
+</div> -->
 
   <!-- PROJECT PAGE SECTION -->
   <a id="projects"></a>
