@@ -5,3 +5,5 @@ function openChatWindow() {
 function closeChatWindow() {
   document.getElementById("chat-form-container").style.display = "block";
 }
+
+export default script;

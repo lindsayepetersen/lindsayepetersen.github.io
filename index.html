@@ -9,38 +9,44 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@200;400;700&display=swap" rel="stylesheet">
 
+  <!-- ADDING BOOTSTRAP. CHANGES SOME STYLING -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="script.js">
+  <script src="script.js"></script>
 
   <script src="https://kit.fontawesome.com/446937da19.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- NAVBAR SECTION -->
   <header>
-    <a id="home"></a>
-    <navbar>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-item-link" href="#home" target="_self">Lindsay Petersen</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-item-link" href="#home" target="_self">Home</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-item-link" href="#about" target="_self">About</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-item-link" href="#projects" target="_self">Projects</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-item-link contact-btn" href="#contact" target="_self">Contact</a>
-        </li>
-      </ul>
-    </navbar>
+    <div class="header-content">
+      <div class="header-logo-container">
+        <div class="header-logo-img-container">
+          <img class="header-logo-img" src="logo picture.png" alt="Lindsay Petersen Logo Image">
+        </div>
+        <span class="header-logo-sub">Lindsay Petersen</span>
+      </div>
+      <div class="header-main">
+        <ul class="header-links">
+          <li class="header-link-wrapper">
+            <a class="header-link" href="#home">Home</a>
+          </li>
+          <li class="header-link-wrapper">
+            <a class="header-link" href="#about">About</a>
+          </li>
+          <li class="header-link-wrapper">
+            <a class="header-link" href="#projects">Projects</a>
+          </li>
+          <li class="header-link-wrapper">
+            <a class="header-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
   </header>
+  <!-- --------------------------------- -->
+
+
 
   <!-- CHAT BUTTON -->
   <button class="open-btn" type="button" onclick="openChatWindow()"><i class="fa fa-comment"></i>Chat</button>
@@ -69,10 +75,12 @@
       </div>
     </form>
   </div>
-  <!--  -->
+  <!-- ---------------------------------- -->
+
 
 
   <!-- HOME PAGE SECTION-->
+  <a id="home"></a>
   <main class="main-container">
     <div class="main-container">
       <img src="yellow-blobs4.png" class="img-4" alt="Yellow blob">
@@ -82,6 +90,9 @@
       <div class="button-container"><a class="intro-p button" href="#about">Next Section</a></div>
     </div>
   </main>
+  <!-- ----------------------------------- -->
+
+ 
 
   <!-- ABOUT ME SECTION? -->
   <a id="about"></a>
@@ -117,26 +128,6 @@
   </div>
   <!-- ----------------  -->
 
-
-  <!-- SKILL PAGE SECTION -->
-  <!-- <a id="skills"></a> 
-  <div class="skills-main-container">
-  <h2 class="skills">Skills</h2>
-
-  <div id="skill_container">
-    <i class="skill fa-brands fa-html5 fa-7x"></i>
-    <i class="skill fa-brands fa-css3-alt fa-7x"></i>
-    <i class="skill fa-brands fa-square-js fa-7x"></i>
-    <i class="skill fa-brands fa-react fa-7x"></i>
-    <i class="skill fa-brands fa-github fa-7x"></i>
-    <i class="skill fa-brands fa-chrome fa-7x"></i>
-    <i class="skill fa-solid fa-terminal fa-7x"></i>
-    <i class="skill fa-brands fa-npm fa-7x"></i>
-  </div>
-
-  <div class="skill-btn-container"><a class="skill-btn button" href="#projects">Next Section</a></div>
-  </a>
-</div> -->
 
   <!-- PROJECT PAGE SECTION -->
   <a id="projects"></a>
@@ -180,11 +171,12 @@
 
     <div class="project-btn-container"><a class="project-btn button" href="#contact" target="_self">Next Section</a></div>
   </div>
+  <!-- ------------------------------------------ -->
+
 
   <!-- CONTACT PAGE SECTION -->
   <a id="contact"></a>
   <div class="contact-container">
-    <a id="contact_me_page">
         <section class="contacts">
             <h2 class="contacth2">Contact</h2>
             <p class="contactp">Like my work? I'd love to hear from you!</p>
@@ -203,25 +195,28 @@
                 <button type="submit">Send</button>
               </form>
             </div>
-        
-          
-            
-            <div class="footer-img-container">
+            <!-- ------------------------------------------ -->
+
+
+            <!--------------- FOOTER SECTION -------------- -->
+            <div class="footer-basic">
               <footer>
-              
-                <div class="contact-links contact-link-container">
-                  <a href="https://github.com/lindsayepetersen" title="Github" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github fa-xl footer-link"></i></a>
-                  <a href="https://www.linkedin.com/in/lindsay-petersen-22160b25b/" title="LinkedIn" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-linkedin fa-xl footer-link"></i></a>
-                  <a href="https://docs.google.com/document/d/1f_mUEWCycMUxJa7Xsn2gAWroFJPpPvFJ5NibUokjbGw/edit?usp=sharing" title="Resume" target="_blank" rel="noreferrer noopener"><i class="fa-solid fa-file fa-xl footer-link"></i></a>
-                </div>
-                Made with &#128158; from Utah
+                  <div class="social">
+                    <a href="https://github.com/lindsayepetersen" title="Github"><i class="icon ion-social-github fa-brands fa-github fa-sm footer-link"></i></a>
+                    <a href="https://www.linkedin.com/in/lindsay-petersen-22160b25b/" title="LinkedIn"><i class="icon ion-social-linkedin fa-brands fa-linkedin-in fa-sm"></i></a>
+                    <a href="https://docs.google.com/document/d/1f_mUEWCycMUxJa7Xsn2gAWroFJPpPvFJ5NibUokjbGw/edit?usp=sharing" title="Resume"><i class="icon ion-social-resume fa-regular fa-file-lines fa-sm"></i></a>
+                  </div>
+                  <ul class="list-inline">
+                      <li class="list-inline-item"><a href="#home">Home</a></li>
+                      <li class="list-inline-item"><a href="#about">About</a></li>
+                      <li class="list-inline-item"><a href="#projects">Projects</a></li>
+                      <li class="list-inline-item"><a href="#contact">Contact</a></li>
+                  </ul>
+                  <p class="copyright">Lindsay Petersen © 2023</p>
               </footer>
-              <img class="footer-img" src="yellow-blobs.png" alt="Background Image">
-            </div>
-            
-            
+          </div>
         </section>
-    </a>
-</div>
-</body>
+      </a>
+    </div>
+  </body>
 </html>
