@@ -130,6 +130,7 @@ li {
 
 
 /*-------------------- HOME PAGE SECTION  --------------------*/
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -713,73 +714,3 @@ i:hover {
 }
 /* ---------------------------------------------------------- */
 /* ---------------------------------------------------------- */
-
-
-
-/*--------------------- MEDIA QUERIES ---------------------*/
-/* Media Query for Mobile Devices */
-        @media (max-width: 480px) {
-            /* body {
-                background-color: red;
-            } */
-        }
-          
-
-/* Media Query for low resolution  Tablets, Ipads */
-        @media (min-width: 481px) and (max-width: 767px) {
-            /* body {
-                background-color: yellow;
-            } */
-        }
-          
-
-/* Media Query for Tablets Ipads portrait mode */
-        @media (min-width: 768px) and (max-width: 1024px){
-            /* body {
-                background-color: blue;
-            } */
-
-            /* Home page section */
-            .top-left {
-              font-size: 18.4px;
-            }
-
-            .intro {
-              font-size: 54.4px;
-            }
-
-            .intro-p {
-              font-size: 14.4px;
-            }
-
-            .button {
-              font-size: 10.6px;
-            }
-            /*  */
-
-            /* About Me Section */
-            /* .fa-brands {
-              size: 1%;
-            } */
-            /*  */
-
-        }
-          
-
-/* Media Query for Laptops and Desktops */
-        @media (min-width: 1025px) and (max-width: 1280px){
-            /* body {
-                background-color: green;
-            } */
-        }
-          
-/* Media Query for Large screens */
-        @media (min-width: 1281px) {
-            /* body {
-                background-color: white;
-            } */
-        }
-
-
-
-/* ---------------------------------------------------- */
