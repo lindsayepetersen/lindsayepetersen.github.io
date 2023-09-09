@@ -30,12 +30,4 @@
 * HTML
 * CSS
 * JavaScript
-	
-## Setup
-To run this project, install it locally using npm:
 
-```
-$ cd ../lindsay-portfolio
-$ npm install
-$ npm start
-```
